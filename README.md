@@ -19,8 +19,8 @@ Then add the following to the scripts section in package.json:
 ```json
 {
   "scripts": {
-    "db:create": "node_modules/.bin/create_database",
-    "db:drop": "node_modules/.bin/drop_database"
+    "db:create": "create_database",
+    "db:drop": "drop_database"
   }
 }
 ```
