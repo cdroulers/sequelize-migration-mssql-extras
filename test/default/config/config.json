@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": null,
-    "password": null,
-    "database": "sequelize_migration_pg_extras_development",
+    "username": "mssql",
+    "password": "mssql",
+    "database": "sequelize_migration_mssql_extras_development",
     "host": "127.0.0.1",
-    "dialect": "pg"
+    "dialect": "mssql"
   },
   "test": {
     "username": null,
     "password": null,
-    "database": "sequelize_migration_pg_extras_test",
+    "database": "sequelize_migration_mssql_extras_test",
     "host": "127.0.0.1",
-    "dialect": "pg"
+    "dialect": "mssql"
   },
   "production": {
     "username": null,
     "password": null,
-    "database": "sequelize_migration_pg_extras_production",
+    "database": "sequelize_migration_mssql_extras_production",
     "host": "127.0.0.1",
-    "dialect": "pg"
+    "dialect": "mssql"
   }
 }

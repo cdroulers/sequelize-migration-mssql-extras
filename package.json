@@ -1,29 +1,36 @@
 {
-  "name": "sequelize-migration-pg-extras",
-  "description": "Add db:create and db:drop scripts to your project",
+  "name": "sequelize-migration-mssql-extras",
+  "description": "Add db:create and db:drop scripts to your project for MSSQL",
   "license": "MIT",
-  "keywords": ["sequelize", "postgres"],
+  "keywords": [
+    "sequelize",
+    "mssql"
+  ],
   "version": "1.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cesarandreu/sequelize-migration-pg-extras.git"
+    "url": "git://github.com/cdroulers/sequelize-migration-mssql-extras.git"
   },
   "author": {
-    "name": "Cesar Andreu",
-    "email": "cesarandreu@gmail.com",
-    "url": "https://github.com/cesarandreu"
+    "name": "Christian Droulers",
+    "email": "droulers.christian@gmail.com",
+    "url": "https://github.com/cdroulers"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no automated tests\" && exit 1"
+    "test": "mocha test/**/*.spec.js"
   },
   "dependencies": {
-    "pg": "^4.0.0"
+    "tedious": "^1.14.0"
   },
   "bin": {
     "create_database": "lib/create_database.js",
     "drop_database": "lib/drop_database.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
