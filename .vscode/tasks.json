@@ -2,12 +2,18 @@
     "version": "0.1.0",
     "command": "npm",
     "isShellCommand": true,
+    "args": [
+        "run"
+    ],
     "tasks": [
         {
-            "taskName": "build",
-            "args": [],
+            "taskName": "lint",
+            "args": [
+                "-s"
+            ],
             "isBuildCommand": true,
-            "isWatching": false
+            "isWatching": false,
+            "problemMatcher": "$eslint-stylish"
         }
-    ]    
+    ]
 }

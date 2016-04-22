@@ -2,6 +2,7 @@
 var chai = require("chai");
 var expect = chai.expect;
 var asPromised = require("chai-as-promised");
+var extend = require('util')._extend;
 chai.use(asPromised);
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
@@ -28,7 +29,7 @@ describe("Shared library", () => {
     });
 
     it("reports success when it already exists", (done) => {
-      let newConfig = Object.assign({}, config);
+      let newConfig = extend({}, config);
       newConfig.database = "master";
       const p = shared.create(newConfig);
       expect(p).to.eventually.deep.equal({ message: "Database " + newConfig.database + " already exists" }).notify(done);
@@ -42,7 +43,7 @@ describe("Shared library", () => {
     });
 
     it("reports success when it doesn't exist", (done) => {
-      let newConfig = Object.assign({}, config);
+      let newConfig = extend({}, config);
       newConfig.database = "aslkdjfslkfjasklfjlaksdjflksjfjkl";
       const p = shared.drop(newConfig);
       expect(p).to.eventually.deep.equal({ message: "Database " + newConfig.database + " does not exist" }).notify(done);

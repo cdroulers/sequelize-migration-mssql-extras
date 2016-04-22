@@ -20,7 +20,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha test/**/*.spec.js"
+    "test": "mocha test/**/*.spec.js",
+    "lint": "eslint ."
   },
   "dependencies": {
     "bluebird": "^3.3.5",
