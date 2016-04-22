@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "mssql",
-    "password": "mssql",
+    "username": null,
+    "password": null,
     "database": "sequelize_migration_mssql_extras_development",
     "host": "127.0.0.1",
     "dialect": "mssql"

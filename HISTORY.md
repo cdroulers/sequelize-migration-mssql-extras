@@ -1,10 +1,10 @@
-1.0.1 / 2014-11-26
+1.1.0 / 2016-04-22
 ==================
 
-* add HISTORY
-* update README
+* Add `--kill` option drop_database.js to force `DROP` a database that is currently in use.
+* Made tests better.
 
-1.0.0 / 2014-11-26
+1.0.1 / 2016-04-15
 ==================
 
-* initial release
+* First version from fork of https://github.com/cesarandreu/sequelize-migration-pg-extras

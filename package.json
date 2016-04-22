@@ -6,7 +6,7 @@
     "sequelize",
     "mssql"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/cdroulers/sequelize-migration-mssql-extras.git"
@@ -23,6 +23,7 @@
     "test": "mocha test/**/*.spec.js"
   },
   "dependencies": {
+    "bluebird": "^3.3.5",
     "tedious": "^1.14.0"
   },
   "bin": {
@@ -31,6 +32,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "eslint": "^2.8.0",
     "mocha": "^2.4.5"
   }
 }

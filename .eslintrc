@@ -1,0 +1,13 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 5,
+        "sourceType": "module"
+    },
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "no-trailing-spaces": 2,
+        "eol-last": 2
+    }
+}
